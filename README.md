@@ -24,7 +24,7 @@ This is the completed module 13 challenge from the UCF FSF Bootcamp. The purpose
 3. Open the integrated terminal in vscode and run the command `node server.js` to start the app.
 4. Open insomnia to test out the functionality of this app.
 
-You can get a more detailed instruction using this link: [Video Instruction]()
+You can get a more detailed instruction using this link: [Video Instruction](https://drive.google.com/file/d/1oFkFJpg3b5bNGb015ewvLQpzTUdc_cJe/view)
 
 ## Contributing
 If you have any good ideas or changes you want to share, you can create a pull request or add issues to the repository. You can also contact me using the information in the [Questions](#questions) section.<br />
