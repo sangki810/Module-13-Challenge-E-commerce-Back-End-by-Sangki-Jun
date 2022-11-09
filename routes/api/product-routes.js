@@ -54,10 +54,11 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
+      "product_name": "Basketball",
+      "price": 200.00,
+      "stock": 3,
+      "category_id": 1
+      "tagIds": [1, 2, 3, 4]
     }
   */
   Product.create(req.body)
@@ -86,10 +87,10 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
   /* req.body should look like this...
     {
-      product_name: "Soccer",
-      price: 300.00,
-      stock: 5,
-      tagIds: [1, 4]
+      "product_name": "Soccer",
+      "price": 300.00,
+      "stock": 5,
+      "tagIds": [1, 4]
     }
   */
   // update product data
@@ -134,6 +135,20 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
+  Product.destroy({
+    where: {
+      id: req.params.id
+    }
+  }).then(productData => {
+      if (!productData) {
+        res.status(404).json({message: 'No product with this id can be found'});
+        return;
+      }
+        res.json(productData)
+  }).catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+  });
 });
 
 module.exports = router;
