@@ -57,7 +57,7 @@ router.post('/', (req, res) => {
       "product_name": "Basketball",
       "price": 200.00,
       "stock": 3,
-      "category_id": 1
+      "category_id": 1,
       "tagIds": [1, 2, 3, 4]
     }
   */
@@ -90,6 +90,7 @@ router.put('/:id', (req, res) => {
       "product_name": "Soccer",
       "price": 300.00,
       "stock": 5,
+      "category_id": 3,
       "tagIds": [1, 4]
     }
   */
