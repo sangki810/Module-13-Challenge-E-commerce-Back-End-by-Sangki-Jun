@@ -84,6 +84,14 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  /* req.body should look like this...
+    {
+      product_name: "Soccer",
+      price: 300.00,
+      stock: 5,
+      tagIds: [1, 4]
+    }
+  */
   // update product data
   Product.update(req.body, {
     where: {
