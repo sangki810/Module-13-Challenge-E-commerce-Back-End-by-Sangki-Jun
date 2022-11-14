@@ -8,8 +8,8 @@ This is the completed module 13 challenge from the UCF FSF Bootcamp. The purpose
 1. [Installations](#installations)
 2. [Usage](#usage)
 3. [Contributing](#contributing)
-5. [License](#license)
-6. [Questions](#questions)
+4. [License](#license)
+5. [Questions](#questions)
 
 ## Installations
 1. Clone the repository to your local environment using the `git clone SSH-key` command.
